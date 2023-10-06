@@ -23,48 +23,49 @@
     </header>
     <!-- Starting the main content -->
     <main>
-       <!-- Adding table for hours -->
-       <h2>Contact Us</h2>
-       <table border>
-        <caption>Hours of Operation</caption>
-        <thead>
+        <!-- Adding table for hours -->
+        <h2>Contact Us</h2>
+        <table border>
+            <caption>Hours of Operation</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
             <tr>
-                <th>Day</th>
-                <th>Hours</th>
+                <td>Mon-Fri</td>
+                <td>6AM-8PM</td>
             </tr>
-        </thead>
-        <tbody></tbody>
-        <tr>
-            <td>Mon-Fri</td>
-            <td>6AM-8PM</td>
-        </tr>
-        <td>Sat</td>
-        <td>9AM-11PM</td>
-        <tr>
-            <td>Sun</td>
-            <td>CLOSED</td>
-        </tr>
-       </table>
-       <!-- Adding a section for a Contact Form -->
-       <section>
-        <h3>We would love to hear from you!</h3>
-        <!-- Adding the form -->
-        <form action="thanks.html" method="post">
-            <div>
+            <td>Sat</td>
+            <td>9AM-11PM</td>
+            <tr>
+                <td>Sun</td>
+                <td>CLOSED</td>
+            </tr>
+        </table>
+        <!-- Adding a section for a Contact Form -->
+        <section>
+            <h3>We would love to hear from you!</h3>
+            <!-- Adding the form -->
+            <form action="thanks.html" method="post">
+                <div>
 
-                <label for="fullname">Name</label>
-                <input type="text" id="fullname" name="fullname">
-            </div>
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
 
-            <div>
+                <div>
 
-                <label for="youremail">Email</label>
-                <input type="email" id="youremail" name="youremail" placeholder="Algonquin Email" value="@algonquinlive.com" required>
-            </div>
+                    <label for="youremail">Email</label>
+                    <input type="email" id="youremail" name="youremail" placeholder="Algonquin Email"
+                        value="@algonquinlive.com" required>
+                </div>
 
-            <div>
-                <label for="message">Message</label>
-                <textarea name="message" id="message"> 
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
             </div>
             
             <div>
@@ -93,10 +94,10 @@
 
             <div>
                 <h3>Policies</h3>
-                <input type="checkbox" name="policies" id="policies">
+                <input type="checkbox" name="policies" id="policies" required>
                 <label for="policies">I agree to the terms and conditions.</label>
             </div>
-
+            <button type="submit">Submit</button>
         </form>
        </section>
     </main>
