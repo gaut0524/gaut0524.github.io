@@ -79,8 +79,8 @@ h3~p {
 /* Using pseudo classes */
 /* Styling the navigation */
 nav ul a,
-nav ul a;link,
-nav ul, a;:visited {
+nav ul a:link,
+nav ul, a:visited {
     background-color: antiquewhite;
     /* Horizontal, vertical, blur, spread, color - matches with numbers below */
     box-shadow: -2px 2px 4px 2px black;
