@@ -85,3 +85,12 @@ nav ul, a;:visited {
     /* Horizontal, vertical, blur, spread, color - matches with numbers below */
     box-shadow: -2px 2px 4px 2px black;
 }
+nav ul.current
+nav ul a:hover, 
+nav ul a:focus {
+     text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}

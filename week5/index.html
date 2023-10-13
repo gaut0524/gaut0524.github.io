@@ -4,7 +4,9 @@
     <head>
             <meta charset="UTF-8">
             <title>J&A's Coffee Shop - Home</title>
+            <link rel="stylesheet" href="css/main.css">
     </head>
+
     <body>
         <!-- This is an HTML comment -->
         <!-- CRTL/Command + / to add or remove a comment -->
@@ -12,12 +14,22 @@
         <!-- Site Header -->
         <header>
             <h1>J&A's Coffee Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+    
         </header>
+
         <!-- Starting the main content -->
         <main>
+            <a href="#treatoftheweek">Treat of the Week</a>
             <!-- article of the page. Can be a standalone -->
             <article>
                 <h2>Our Story</h2>
+                <img src="./images/coffee-shop.jpg" alt="coffee cup on a pile of coffee beans">
                 <p>
                     We are a <em>family-owned business</em>. Jackie is the <abbr title="Chief Executive Officer">CEO</abbr> and she is the head barista of the shop. Anita is the pastry chef and is in charge of the bake shop. Celebrating their 3<sup>rd</sup> anniversary together in October 2023.
                 </p>
@@ -55,9 +67,9 @@
             </section>
             
             <!-- Adding a section for a description list -->
-            <section>
-                <h3>Treat of the Week</h3>
-                <dl>
+            <section id="treatoftheweek">
+                <h3 class="white-text">Treat of the Week</h3>
+                <dl class="white-text">
                     <dt>Name</dt>
                     <dd>Chocolate Chip Banana Bread</dd>
 
