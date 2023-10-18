@@ -29,12 +29,12 @@ header, footer {
 nav a { 
     text-decoration: none;
     background-color: blanchedalmond;
-    border: 2px solid pink;
+    border: 2px solid rgb(136, 58, 71);
 }
 
 nav a:hover {
-    background-color: bisque;
+    background-color: rgb(187, 160, 127);
 }
 nav a:focus {
-    background-color:hwb(33 51% 22%) 
+    background-color:hwb(33 53% 24%) 
 }
