@@ -10,7 +10,6 @@ header, footer {
 
 .site-title {
     color: antiquewhite;
-    text-decoration: wheat;
 } 
 
 #my-image {
@@ -35,6 +34,7 @@ nav a {
 nav a:hover {
     background-color: rgb(187, 160, 127);
 }
+
 nav a:focus {
     background-color:hwb(33 53% 24%) 
 }
