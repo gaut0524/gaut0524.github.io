@@ -1,0 +1,131 @@
+/* 
+This is a CSS comment
+Shortcut for adding a comment is ctrl + / 
+ */
+
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+ }
+
+ h1 {
+    color: cadetblue;
+ }
+
+ p {
+    background-color: antiquewhite;
+ }
+
+ /* Selecting multiple elements */
+ h1, h2, h3, h4 {
+    text-decoration: underline;
+ }
+
+ /* Selecting child elements */
+nav ul {
+    list-style: none;
+}
+
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+/* Selecting element with ID value */
+/* As of best practice, avoid using IDs for styles */
+#treatoftheweek {
+    background-color: cadetblue;
+}
+
+.blue-link {
+    background-color: darkslategray;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+/* Combinators */
+/* direct child selector = will only select the direct child of the parent */
+article>p {
+    font-size: 14px;
+}
+
+/* Adjacent sibling selector - selects the element that is the very next sibling to the selected elemen, if any exist */
+/* Need 3 things for border - line thickness, type of line, and colour */
+h3+ul {
+    border: 1px solid black;
+}
+/* Sibling selector */
+h3~p {
+    text-transform: uppercase;
+}
+
+/* Attribute selector */
+[href="treatoftheweek"] {
+    font-weight: bold;
+}
+
+/* Dollar sign signifies something ending with the following subject */
+[src$=".jpg"] {
+    border: 4px solid darkslategray;
+}
+/* Using pseudo classes */
+/* Styling the navigation */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: antiquewhite;
+    /* Horizontal, vertical, blur, spread, color - matches with numbers below */
+    box-shadow: -2px 2px 4px 2px black;
+}
+nav ul .current,
+nav ul a:hover, 
+nav ul a:focus {
+     text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* Position selectors */
+/* First-child and last-child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Styling the table */
+table {
+    border-collapse: collapse;
+}
+
+/* nth-child selector - even/odd */
+tbody tr:nth-child(even) {
+    /* This is how we doe a hex-color value with 6 characters */
+    background-color: #d5836c;
+}
+
+table th:nth-child(n), 
+table td:nth-child(n) {
+    border: 1px solid #000;
+}
+/* Using formula in nth-child selector */
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Specificity */
+/* Formula: inline style, id, class, tag-name */
+/* eg: footer - 1, body footer - 2, site-header - 10, body footer class - 12 */
+/* Never do in-line styles where something like body footer and background colour are on the same line*/
