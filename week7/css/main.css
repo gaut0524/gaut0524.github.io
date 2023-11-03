@@ -77,18 +77,50 @@ nav ul a {
     /* width: 100vw;  */
     height: 100vh;
     width: 50%;
+    /* Position Relative */
+    position: relative;
+    padding: 1em 1em 4em 1em
 }
 
+/* Absolute Position */
+.blue-link.large-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .blue-link {
     background-color: darkslategray;
     color: antiquewhite;
     text-decoration: none;
+    /* em=1.5 x font size */
+    padding: 1.5em;
+    width: 300px;
+    display: block;
+
 }
 
 .large-text {
     font-size: 24px;
+    line-height: 1.5em;
 }
 
+/* Example of float layout */
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside {
+    width: 20%;
+}
+
+section {
+    clear: left;
+}
 .white-text {
     color: antiquewhite;
 }
@@ -121,6 +153,16 @@ h3~p {
 /* Dollar sign signifies something ending with the following subject */
 [src$=".jpg"] {
     border: 4px solid darkslategray;
+}
+
+/* Fixed Navigation */
+nav {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
 }
 /* Using pseudo classes */
 /* Styling the navigation */

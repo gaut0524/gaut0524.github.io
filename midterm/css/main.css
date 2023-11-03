@@ -1,0 +1,30 @@
+html {
+    background-color: #aad4cf;
+    font-family: sans-serif;
+}
+
+body {
+    margin: auto;
+    width: 1000px;
+}
+
+.container {
+    background-color: #d4eae9;
+    margin: 0 auto;
+    width: 900px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: 50;
+    padding-left: 310px;
+    top: 140px;
+
+}
+
+
