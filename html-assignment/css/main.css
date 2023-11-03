@@ -21,7 +21,7 @@ header, footer {
     list-style-type: square; 
 }
 
-#my-hobbies :nth-child(odd){
+#my-hobbies:nth-child(odd){
     background-color: rgb(251, 236, 217);
 }
 
