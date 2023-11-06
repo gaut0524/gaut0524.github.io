@@ -1,17 +1,14 @@
-html {
+body {
+    margin: auto;
+    width: 1000px;
     background-color: #aad4cf;
     font-family: sans-serif;
 }
 
-body {
-    margin: auto;
-    width: 1000px;
-}
-
 .container {
     background-color: #d4eae9;
-    margin: 0 auto;
-    width: 900px;
+    margin: 1200 auto;
+    width: 1000px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -25,6 +22,81 @@ h1 {
     padding-left: 310px;
     top: 140px;
 
+}
+
+header img {
+    display: inline;
+    width: 1000px;
+    padding: 30;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h2 {
+    font-size: 35px;
+    font-weight: 20px;
+}
+
+
+nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+nav ul li {
+    margin: 0;
+    display: inline;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 0;
+    padding-left: 120px;
+    padding-right: 80px;
+    
+}
+
+.vertical_line {
+    border-right: solid;
+    border-left: solid;
+}
+
+.body_image {
+    float: left;
+    width: 25%;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 5px;
+}
+
+.form {
+    border: solid;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.form_spacing {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    border: 1px solid;
+    text-align: right;
+    background-color:#d4eae9;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+footer {
+    text-align: right;
+    padding-top: 12px;
+    padding-bottom: 18px;
 }
 
 
