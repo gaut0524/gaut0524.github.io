@@ -13,6 +13,7 @@ body {
     max-width: 1200px;
     padding-bottom: 10px;
 }
+/* Adds a container with padding, colour, and max-width */
 
 h1 {
     position: absolute;
@@ -23,17 +24,19 @@ h1 {
     top: 140px;
 
 }
+/* Moves the h1 onto the banner, changes text colour, and adds padding */
 
 header img {
     display: block;
     width: 100%;
     padding: 0;
 }
-
+/* Adjusts width of banner to 100% of the page */
 
 h2 {
     font-size: 35px;
 }
+/* Adjusts font-size of h2 */
 
 
 nav ul {
@@ -42,13 +45,15 @@ nav ul {
     list-style-type: none;
 
 }
+/* Adds nav grid and fixes template */
 
 a {
     text-decoration: none;
     color: black;
     font-size: 25px;
     font-weight: 500;
-    }
+}
+/* Adjusts text appearance for nav a */
 
 
 nav ul li {
@@ -59,13 +64,14 @@ nav ul li {
     padding-top: 0;
     padding-left: 120px;
     padding-right: 80px;
-    
 }
+/* Fixes nav display to inline, text centred, and appropriate padding */
 
 .vertical_line {
     border-right: 2px solid black;
     border-left: 2px solid black;
 }
+/* Adds vertical lines to separate nav buttons */
 
 .body-image {
     float: left;
@@ -74,12 +80,13 @@ nav ul li {
     margin-right: 0.5rem;
     margin-bottom: 2rem;
     padding: 5px;
-   
 }
+/* Adds body image and resizes it, applies float, and adds margins and padding */
 
 .container-main-content {
     padding: 2.5%;
 }
+/* Adds padding to the page's main content */
 
 .form {
     border: 2px solid;
@@ -88,21 +95,28 @@ nav ul li {
     margin: 9px 0;
     box-sizing: border-box;
 }
+/* Adjusts form's appearance appropriate to the page */
 
 .contact-form {
     display: block;
+    margin-top: 12px;
 }
+/* Displays "Contact Us" section's text area and title in block form */
 
 .textarea {
-    width: 100%;
+    width: 98%;
     resize: none;
-    outline: #949a9a;
+    padding: 1%;
+    margin-right: 7px;
+    border: 2px solid #c5caca;
 }
+/* Adjusts size of text area and the outline */
 
 .form_spacing {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+/* Fixes form spacing in the contact section and adds more space between radio buttons and send button */
 
 button {
     border: 1px solid;
@@ -113,6 +127,7 @@ button {
     padding: 0.5rem;
     margin-top: 1.5em;
 }
+/* Designs button and gives it space between itself and other features/elements */
 
 footer {
     text-align: right;
@@ -122,5 +137,6 @@ footer {
     padding-bottom: 15px;
     padding-right: 25px;
 }
+/* Arranges footer to the right, and adds padding around it for ideal placement */
 
 
