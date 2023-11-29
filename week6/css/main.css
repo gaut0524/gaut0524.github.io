@@ -52,7 +52,7 @@ nav ul a {
     width: 50%;
 }
 
-.blue-link {
+.blue_link {
     background-color: darkslategray;
     color: antiquewhite;
     text-decoration: none;
@@ -137,7 +137,7 @@ tbody tr:nth-child(even) {
 
 table th:nth-child(n), 
 table td:nth-child(n) {
-    border: 1px solid #000;
+    border: 1px solid #3aedcd;
 }
 /* Using formula in nth-child selector */
 table td:nth-child(2n+1) {
