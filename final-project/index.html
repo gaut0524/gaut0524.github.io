@@ -6,43 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebDev Final</title>
 </head>
-
+<!-- Adds HTML-5 content -->
+<!-- Opens body, adds container class, and links sections in the list -->
 <body>
-    <div>
+    <div class="container">
+        <img src="./images/logo.png" alt="logo" class="nav-image">
         <nav>
             <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Team</li>
-                <li>Contact</li>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about-us">About Us</a>
+                </li>
+                <li>
+                    <a href="#cards">Services</a>
+                </li>
+                <li>
+                    <a href="#our-team">Team</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
+            <!-- Adds form action, placeholder text, and a submit button -->
+            <form action="search">
+                <input type="text" placeholder="search">
+                <button type="submit">submit button</button>
+            </form>
         </nav>
     </div>
     <div>
-        <div>
+        <!-- Adds welcome content and a "connect with us" button -->
+        <div class="welcome">
             <h1>
                 Welcome to Three Star Media
             </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad nesciunt explicabo ducimus cum maiores
                 accusantium consequuntur doloribus beatae tempora laboriosam, sed doloremque labore asperiores quod qui
                 officia eveniet? Dignissimos?</p>
-        </div>
-        <div>
-            <button type="button">Connect with us</button>
+            <div>
+                <button type="button">Connect with us</button>
+            </div>
         </div>
     </div>
-    <div>
-        <h2>About Us</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae aspernatur vero odit atque itaque
-            consequuntur, vel hic minus officiis voluptas maiores numquam quaerat harum error sint sunt facilis eum.
-        </p>
-    </div>
-    <div>
-        <h2>Our Services</h2>
-        <div>
-            <div class="Services-Cards">
+    <!-- opens main content, adds id "about-us" section, and links image -->
+    <main>
+        <section id="about-us">
+
+            <img src="./images/about-us.jpg" alt="about-us">
+            <h2>About Us</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae aspernatur vero odit atque
+                itaque
+                consequuntur, vel hic minus officiis voluptas maiores numquam quaerat harum error sint sunt facilis eum.
+            </p>
+        </section>
+        <!-- gives id of "cards" and adds a generic class of services-cards to all services -->
+        <section id="cards">
+
+            <div>
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-cards">
+                <img src="./images/digital.jpg" alt="digital">
                 <h3>Digital Transformation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum corrupti
                     pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus tenetur soluta
@@ -51,8 +78,10 @@
                     <button type="button">Digital Plans</button>
                 </div>
             </div>
+            <!-- adds image for "digital" and a button for the plans -->
 
-            <div class="Services-Cards">
+            <div class="services-cards">
+                <img src="./images/marketing.jpg" alt="marketing">
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum corrupti
                     pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus tenetur soluta
@@ -60,9 +89,10 @@
                 <div>
                     <button type="button">Marketing Plans</button>
                 </div>
-
+                <!-- adds image for "marketing" and a button -->
             </div>
-            <div class="Services-Cards">
+            <div class="services-cards">
+                <img src="./images/video.jpg" alt="video">
                 <h3>Video Production</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum corrupti
                     pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus tenetur soluta
@@ -70,94 +100,130 @@
                 <div>
                     <button type="button">Video Plans</button>
                 </div>
+                <!-- adds class, image, and button for "video" section -->
             </div>
-            <div class="Services-Cards">
+            <div class="services-cards">
+                <img src="./images/web.jpg" alt="webdev">
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum corrupti
                     pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus tenetur soluta
                     modi veritatis! Rem, et?</p>
+            </div>
+            <div>
+                <button type="button">Web Plans</button>
+            </div>
+            <!-- adds class, image, and button for "webdev" section -->
+            <div class="services-cards">
+                <img src="./images/print.jpg" alt="print">
+                <h3>Print</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum corrupti
+                    pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus tenetur
+                    soluta
+                    modi veritatis! Rem, et?</p>
                 <div>
-                    <button type="button">Web Plans</button>
+                    <button type="button">Print Plans</button>
                 </div>
-                <div class="Services-Cards">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum corrupti
-                        pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus tenetur
-                        soluta
-                        modi veritatis! Rem, et?</p>
-                    <div>
-                        <button type="button">Print Plans</button>
+                <!-- adds class, image, and button for "print" section -->
+            </div>
+        </section>
+        <!-- closes "services" section and opens "vision"section and new div -->
+        <section id="vision">
+            <div>
+                <h3>Our Vision</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt velit suscipit ad? Aperiam
+                    nesciunt nulla magnam non quo adipisci, cum incidunt veritatis iure, doloribus vitae ad earum
+                    eum beatae accusamus?
+                </p>
+                <div class="learn-more-button">
+                    <button type="button">Learn More</button>
+                </div>
+                <!-- adds class, image, and button for "our vision" -->
+            </div>
+        </section>
+        <!-- closes "vision" section -->
+        <section id="our-team">
+            <!-- opens new section for the team -->
+            <div class="Co-owners">
+                <h2>Our Team</h2>
+                <div class="john">
+                    <img src="./images/john.jpg" alt="john-image">
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero, vel molestias quo minus
+                        rerum accusamus pariatur magni, necessitatibus voluptate repellat ducimus odit. Voluptatum
+                        cum, explicabo ipsum nulla vero minus!</p>
                     </div>
+                    <!-- gives common class of "co-owners" and adds another for john and adds his image -->
+                <div class="bob">
+                    <img src="./images/bob.jpg" alt="bob-image">
+                    <h3>Bob Rite</h3>
+                    <h4>CFO and Co-Owner</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A porro obcaecati corrupti
+                        reiciendis dolorum maiores aspernatur modi consectetur possimus earum non similique ad
+                        nesciunt, qui, aliquam praesentium? Unde, delectus aperiam!</p>
                 </div>
-                <div>
-                    <h3>Our Vision</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt velit suscipit ad? Aperiam
-                        nesciunt nulla magnam non quo adipisci, cum incidunt veritatis iure, doloribus vitae ad earum
-                        eum beatae accusamus?
-                    </p>
-                    <div>
-                        <button type="button">Learn More</button>
-                    </div>
-                </div>
+                <!-- gives common class of "co-owners" and adds another for bob and adds his image -->
+            </div>
+        </section>
+        <!-- opens "contact" section and gives div class of "ending content" -->
+        <section id="contact">
 
-                <div class="Co-owners">
-                    <h2>Our Team</h2>
-                    <div>
-                        <h3>John Doe</h3>
-                        <h4>CEO and Co-owner</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero, vel molestias quo minus
-                            rerum accusamus pariatur magni, necessitatibus voluptate repellat ducimus odit. Voluptatum
-                            cum, explicabo ipsum nulla vero minus!</p>
-                    </div>
-                    <div>
-                        <h3>Bob Rite</h3>
-                        <h4>CFO and Co-Owner</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A porro obcaecati corrupti
-                            reiciendis dolorum maiores aspernatur modi consectetur possimus earum non similique ad
-                            nesciunt, qui, aliquam praesentium? Unde, delectus aperiam!</p>
-                    </div>
+            <div class="ending-content">
+                <h2>Contact Us</h2>
+                <div class="message-area">
+                    <h3>Send us a message</h3>
+                    <form action="#" method="post">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </form>
+                    <!-- adds class for the message area, adds form, and gives them type, name, and id-->
+                    <!-- textarea is formatted differently from the above form options -->
                 </div>
+                <!-- adds button for send -->
                 <div>
-                    <h2>Contact Us</h2>
-                    <div>
-                        <h3>Send us a message</h3>
-                        <form action="#">Send us a message</form>
-                        <label for="Fullname">Full Name</label>
-                        <input type="text">
-                        <label for="Email">Email</label>
-                        <input type="text">
-                        <label for="Message">Message</label>
-                        <input type="text">
-                    </div>
-                    <div>
-                        <button type="button">Send</button>
-                    </div>
-                    <div>
-                        <h3>Location</h3>
-                    </div>
-                    <div>
-                        <h3>Hours of operation</h3>
-                        <table>
+                    <button type="button">Send</button>
+                </div>
+                <!-- adds class for "hours-of-op" and creates a table (un-bordered for now) -->
+                <div class="hours-of-op">
+                    <h3>Hours of Operation</h3>
+                    <table>
+                        <thead>
                             <tr>
-                                <td>Days</td>
-                                <td>Hours</td>
+                                <th>Days</th>
+                                <th>Hours</th>
                             </tr>
+                        </thead>
+                        <tbody>
                             <tr>
-                                <td>Monday - Friday</td>
+                                <td>Monday-Friday</td>
                                 <td>9AM - 6PM</td>
                             </tr>
                             <tr>
-                                <td>Saturday - Sunday</td>
+                                <td>Saturday-Sunday</td>
                                 <td>Closed</td>
                             </tr>
-                        </table>
-                    </div>
+                        </tbody>
+                    </table>
+                    <!-- closes table -->
                 </div>
-<footer>
-    &copy; Copyright Three Star Media, 2020
-    All images are taken from Unsplash
-</footer>
+                <!-- adds div class of "map" -->
+                <div class="map">
+                    <h3>Location</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- closes divs, section, and main -->
+    <!-- opens footer with Three Star Media copyright info -->
+    <footer>
+        &copy; Copyright Three Star Media, 2020
+        All images are taken from Unsplash
+    </footer>
+    <!-- closes footer and begins to close body and html -->
 </body>
-
 </html>
