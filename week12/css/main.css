@@ -1,0 +1,39 @@
+/* font-family: 'Abhaya Libre', serif;
+font-family: 'Ubuntu', sans-serif; */
+h1 {
+    font-family:'Abhaya Libre', serif;
+}
+
+h1 {
+    font-weight:500;
+}
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.fa-paint-roller{
+    font-size: 6rem;
+}
+
+.max-mar {
+    max-width: 1000px;
+    margin: 0 auto;
+/* Centers everything with margin 0 auto */
+}
+.header {
+    background-color: rgb(77, 60, 41);
+}
+
+.main {
+    background-color: rgb(185, 156, 111);
+}
+.container {
+    background-color: blanchedalmond;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display:block;
+}
