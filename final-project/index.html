@@ -7,6 +7,8 @@
     <title>WebDev Final</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
+	<!-- import the Open Sans Font -->
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open Sans'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Adds link for the buttons like magnifyin glass and arrow -->
 </head>
@@ -17,7 +19,7 @@
     <div class="container">
         <!-- Adds container that spans the entire body of the doc -->
         <header>
-            <nav>
+            <nav class="navigation">
                 <img src="./images/logo.png" alt="logo" class="nav-image">
                 <ul>
                     <li>
@@ -35,9 +37,10 @@
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
+
                 </ul>
                 <!-- Adds form action, placeholder text, and a submit button -->
-                <form action="search">
+                <form action="search" class="nav-form">
                     <input type="text" placeholder="search">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <!-- Adds the magnifying glass icon and links it for search button -->
@@ -45,29 +48,31 @@
             </nav>
             <div>
                 <!-- Adds welcome content and a "connect with us" button -->
-                <div class="welcome">
-                    <h1>
-                        Welcome to Three Star Media
-                    </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad nesciunt explicabo ducimus cum
-                        maiores
-                        accusantium consequuntur doloribus beatae tempora laboriosam, sed doloremque labore asperiores
-                        quod qui
-                        officia eveniet? Dignissimos?</p>
-                    <div>
-                        <button type="button">Connect with us <i class="fa-solid fa-caret-right"></i></button>
+                <div class="main-banner">
+                    <div class="welcome">
+                        <h1>
+                            Welcome to Three Star Media
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad nesciunt explicabo ducimus cum
+                            maiores
+                            accusantium consequuntur doloribus beatae tempora laboriosam, sed doloremque labore asperiores
+                            quod qui
+                            officia eveniet? Dignissimos?</p>
+                        <div>
+                            <button type="button">Connect with us <i class="fa-solid fa-caret-right"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <!-- opens main content, adds id "about-us" section, and links image -->
         <main>
-            <div>
+            <div class="maindiv">
 
-                <section id="about-us">
+                <section class="about-us" id="about-us">
+
+                    <img src="./images/about-us.jpg" alt="about-us img">
                     <div>
-
-                        <img src="./images/about-us.jpg" alt="about-us">
                         <h2>About Us</h2>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem recusandae aspernatur vero
@@ -76,76 +81,94 @@
                             consequuntur, vel hic minus officiis voluptas maiores numquam quaerat harum error sint sunt
                             facilis eum.
                         </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sapiente eveniet
+                            possimus saepe? In necessitatibus, nam atque perspiciatis assumenda beatae illo! Quis
+                            dolorem ut magnam possimus, repudiandae cumque dignissimos nostrum?
+                        </p>
                     </div>
                 </section>
                 <!-- gives id of "cards" and adds a generic class of services-cards to all services -->
-                <section id="cards">
-                    <div>
+                <section id="services" >
+                    
                         <div>
                             <h2>Our Services</h2>
                         </div>
-                        <div class="services-cards">
+                        <div class="services-list">
+                        <div class="services-cards card services-item-span-3-col">
                             <img src="./images/digital.jpg" alt="digital">
+                            <div>
                             <h3>Digital Transformation</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum
                                 corrupti
                                 pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus
                                 tenetur soluta
                                 modi veritatis! Rem, et?</p>
+                            </div>
                             <div>
                                 <button type="button">Digital Plans <i class="fa-solid fa-caret-right"></i></button>
                             </div>
                         </div>
                         <!-- adds image for "digital" and a button for the plans, and begins to link the arrow button for each card -->
 
-                        <div class="services-cards">
+                        <div class="services-cards card services-item-span-3-col">
                             <img src="./images/marketing.jpg" alt="marketing">
+                            <div>
                             <h3>Marketing</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum
                                 corrupti
                                 pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus
                                 tenetur soluta
                                 modi veritatis! Rem, et?</p>
+                            </div>
                             <div>
                                 <button type="button">Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
                             </div>
                             <!-- adds image for "marketing" and a button -->
                         </div>
-                        <div class="services-cards">
+                        <div class="services-cards card services-item-span-2-col">
                             <img src="./images/video.jpg" alt="video">
-                            <h3>Video Production</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum
-                                corrupti
-                                pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus
-                                tenetur soluta
-                                modi veritatis! Rem, et?</p>
+                            <div>
+                                <h3>Video Production</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum
+                                    corrupti
+                                    pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus
+                                    tenetur soluta
+                                    modi veritatis! Rem, et?</p>
+                                </div>
                             <div>
                                 <button type="button">Video Plans <i class="fa-solid fa-caret-right"></i></button>
                             </div>
                             <!-- adds class, image, and button for "video" section -->
                         </div>
-                        <div class="services-cards">
+                        <!-- Gives the services cards an extremely specific name so I don't get confused about the col span -->
+                        <div class="services-cards card services-item-span-2-col">
                             <img src="./images/web.jpg" alt="webdev">
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum
-                                corrupti
-                                pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus
-                                tenetur soluta
-                                modi veritatis! Rem, et?</p>
+                            <div>
+                                <h3>Web Development</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum
+                                    corrupti
+                                    pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus
+                                    tenetur soluta
+                                    modi veritatis! Rem, et?</p>
+                                </div>
+                                <div>
+                                    <button type="button">Web Plans <i class="fa-solid fa-caret-right"></i></button>
+                                </div>
                         </div>
-                        <div>
-                            <button type="button">Web Plans <i class="fa-solid fa-caret-right"></i></button>
-                        </div>
+
                         <!-- adds class, image, and button for "webdev" section -->
-                        <div class="services-cards">
+                        <div class="services-cards card services-item-span-2-col">
                             <img src="./images/print.jpg" alt="print">
-                            <h3>Print</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum
-                                corrupti
-                                pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus
-                                tenetur
-                                soluta
-                                modi veritatis! Rem, et?</p>
+                            <div>
+                                <h3>Print</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora quas et sunt eum
+                                    corrupti
+                                    pariatur cum exercitationem sapiente eligendi? Quisquam itaque voluptatum, accusamus
+                                    tenetur
+                                    soluta
+                                    modi veritatis! Rem, et?</p>
+                                </div>
                             <div>
                                 <button type="button">Print Plans <i class="fa-solid fa-caret-right"></i></button>
                             </div>
@@ -154,7 +177,7 @@
                     </div>
                 </section>
                 <!-- closes "services" section and opens "vision"section and new div -->
-                <section id="vision">
+                <section class="vision" id="vision">
                     <div>
                         <h3>Our Vision</h3>
                         <p>
@@ -175,33 +198,41 @@
                     <!-- opens new section for the team -->
                     <div class="Co-owners">
                         <h2>Our Team</h2>
-                        <div class="john">
+                        <div class="john card">
                             <img src="./images/john.jpg" alt="john-image">
-                            <h3>John Doe</h3>
-                            <h4>CEO and Co-owner</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero, vel molestias quo
-                                minus
-                                rerum accusamus pariatur magni, necessitatibus voluptate repellat ducimus odit.
-                                Voluptatum
-                                cum, explicabo ipsum nulla vero minus!</p>
+
+                            <div>
+                                <h3>John Doe</h3>
+                                <h4>CEO and Co-owner</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero, vel molestias quo
+                                    minus
+                                    rerum accusamus pariatur magni, necessitatibus voluptate repellat ducimus odit.
+                                    Voluptatum
+                                    cum, explicabo ipsum nulla vero minus!</p>
+                            </div>
                         </div>
+
                         <!-- gives common class of "co-owners" and adds another for john and adds his image -->
-                        <div class="bob">
+                        <div class="bob card">
                             <img src="./images/bob.jpg" alt="bob-image">
-                            <h3>Bob Rite</h3>
-                            <h4>CFO and Co-Owner</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A porro obcaecati corrupti
-                                reiciendis dolorum maiores aspernatur modi consectetur possimus earum non similique ad
-                                nesciunt, qui, aliquam praesentium? Unde, delectus aperiam!</p>
+                            <div>
+                                <h3>Bob Rite</h3>
+                                <h4>CFO and Co-Owner</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A porro obcaecati corrupti
+                                    reiciendis dolorum maiores aspernatur modi consectetur possimus earum non similique ad
+                                    nesciunt, qui, aliquam praesentium? Unde, delectus aperiam!</p>
+                            </div>
                         </div>
                         <!-- gives common class of "co-owners" and adds another for bob and adds his image -->
                     </div>
                 </section>
                 <!-- opens "contact" section and gives div class of "ending content" -->
-                <section id="contact">
+                <section id="contact" class="contact">
 
                     <div class="ending-content">
+                        <div>
                         <h2>Contact Us</h2>
+                        </div>
                         <div class="message-area">
                             <h3>Send us a message</h3>
                             <form action="#" method="post">
@@ -243,8 +274,6 @@
                         <!-- adds div class of "map" -->
                         <div class="map">
                             <h3>Location</h3>
-                        </div>
-                        <div class="algonquin-map">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44849.63421607907!2d-75.81913293721252!3d45.36693393145885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701472983144!5m2!1sen!2sca"
                                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -258,8 +287,8 @@
         <!-- opens footer with Three Star Media copyright info -->
         <footer>
             <div>
-                &copy; Copyright Three Star Media, 2020
-                All images are taken from <a href="https://unsplash.com/">Unsplash</a>
+                <p>&copy; Copyright Three Star Media, 2020</p>
+                <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
             </div>
         </footer>
         <!-- adds div for footer and copyright info, closes footer and begins to close body and html -->

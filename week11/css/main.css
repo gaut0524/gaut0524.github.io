@@ -34,7 +34,7 @@ a,
 a:link,
 a:visited {
     /* Will inherit colour from parent */
-    color:inherit
+    color:inherit;
 }
 
 a:hover,
