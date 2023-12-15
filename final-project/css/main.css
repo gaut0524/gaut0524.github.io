@@ -1,415 +1,457 @@
 /* Opens with HTML and gives document the appropriate font */
 html {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
+
 /* Assigns font size to headers */
-  h1 {
-    font-size: 2em;
-    font-weight: bold;
-    color: #222; 
-  }
-  h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #222;
-  }
-  h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #222;
+h1 {
+  font-size: 4.45em;
+  text-align: left;
+  font-weight: bold;
+  color: #fff;
+}
 
-  }
-  
-  /* The maximum width of the container is set to 1200 px, centering the container */
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-  }
-  
-  /* Styles the main banner image for "welcome," and gives it full sizing */
- .main-banner {
-    background-image: url(../images/main-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px;
-  }
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #222;
+}
 
-  /* Adds the transparent box to main banner */
-  .welcome {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    min-height: 200px;
-  }
-  
-  /* Gives both the nav bar and the footer a black background, and white text */
-  footer {
-    background-color: #222;
-    color: #fff;
-  }
-   /* Formats the nav bar neatly */ 
-  nav {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 10px;
-    align-items: center;
-  }
-  
-  /* Removes the underline from the nav text  */
-  nav ul li {
-    list-style-type: none;
-  }
-  
-  .nav-image {
-    display: block;
-  }
-  
-  /* Styles the nav bar and gives it appropriate padding, centers it, and spaces the elements like 'home' so it fills the nav bar */
-  nav ul li a {
-    display: block;
-    text-align: center;
-    width: auto;
-    padding: 5px 15px;
-    line-height: 1.5;
-    color: #c78c06;
-  }
-  
-  /* Centers everything in the nav bar for the mobile version */
-  .nav-form {
-    justify-content: center;
-  }
-  
-  /* Stylizes the search button for the nav bar */
-  form button {
-    border: 1;
-    background-color: transparent;
-    border-color: #c78c06;
-    color: #c78c06;
-  }
-  
-  section {
-    padding: 0 50px;
-  }
-  
-  footer {
-    padding: 10px 50px;
-  }
-  
-  /* remove the underline of the links in navigation bar and footer*/
-  footer a{
-    text-decoration: none;
-  }
-  nav ul li a {
-    text-decoration: none;
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #222;
 
-  }
-  /* Adds 30% opacity to the background box */
- .maindiv {
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    min-height: 200px;
+}
 
-  }
-  
- .maindiv h1 {
-    font-size: 40px;
-  }
-  
-  /*Adds the "connect with us" button with colour  */
-  .welcome button {
-    margin: 10px 0;
-    text-align: center;
-    text-decoration: none;
-    border: 0;
-    background-color: #c78c06;
-    color: #222;
+/* Calls all the headings and assigns them a margin so they don't overlap */
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.5em;
+}
+
+/* The maximum width of the container is set to 1200 px, centering the container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* Styles the main banner image for "welcome," and gives it full sizing */
+.main-banner {
+  background-image: url(../images/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+
+/* Adds the transparent box to main banner */
+.welcome {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  min-height: 200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Gives both the nav bar and the footer a black background, and white text */
+footer {
+  background-color: #222;
+  color: #c78c06;
 }
 
 
-  /* Adding hover colour to the nav bar */
-  nav  ul  li  a:hover {
-    background-color: #c78c06;
-    color: #222;
+
+/* Formats the nav bar neatly */
+nav {
+  background-color: #222;
+  color: #fff;
+  padding: 10px 10px;
+  align-items: center;
+}
+
+/* Removes the underline from the nav text  */
+nav ul li {
+  list-style-type: none;
+  padding: none;
+  margin:0;
+}
+
+.nav-image {
+  display: block;
+}
+
+/* Styles the nav bar and gives it appropriate padding, centers it, and spaces the elements like 'home' so it fills the nav bar */
+nav ul li a {
+  display: block;
+  text-align: center;
+  width: auto;
+  padding: 5px 15px;
+  line-height: 1.5;
+  color: #c78c06;
+}
+
+/* Centers everything in the nav bar for the mobile version */
+.nav-form {
+  justify-content: center;
+}
+
+/* Stylizes the search button for the nav bar */
+form button {
+  border: 2px;
+  background-color: #222;
+  color: #c78c06;
+  border-color: #c78c06;
+}
+
+section {
+  padding: 0 50px;
+}
+
+footer {
+  padding: 10px 50px;
+}
+
+/* remove the underline of the links in navigation bar and footer*/
+footer a {
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+
+}
+
+/* Adds 30% opacity to the background box */
+.maindiv {
+  padding: 10px;
+  color: #fff;
+  min-height: 200px;
+
+}
+
+.maindiv h1 {
+  font-size: 40px;
+}
+
+/*Adds the "connect with us" button with colour  */
+.welcome button {
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  background-color: #c78c06;
+  color: #222;
+}
+
+
+/* Adding hover colour to the nav bar */
+nav ul li a:hover {
+  background-color: #c78c06;
+  color: #222;
+}
+
+.about-us {
+  background-color: #ffe6ac;
+  padding: 10px 10px;
+  color: #222;
+}
+
+header {
+  background-color: #ffe6ac;
+}
+
+/* Sizes the about-us image to 100% width to fill all the space */
+.about-us img {
+  width: 100%;
+}
+
+/* Adds padding to the text in about-us*/
+.about-us div {
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.about-us div h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.welcome button {
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+.services {
+  padding: 10px 20px;
+}
+
+.services h2 {
+  font-size: 30px;
+}
+
+/* Adds the text for vision button and centers it */
+.vision button {
+  margin: 10px 0;
+  text-align: center;
+  border: 0;
+  display: block;
+  background-color: #222;
+  color: #fff;
+  padding: 10px 15px;
+  border: 1px solid#c78c06;
+}
+
+/* Adds the image for "vision," sets it as background, and adds padding to make it fit snugly */
+.vision {
+  background-image: url(../images/vision.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 20px 70px;
+  background-color: #ffe6ac;
+}
+
+/* Adds the transparent boxes like in the welcome banner */
+.vision div {
+  padding: 10px;
+  background-color: rgba(2, 2, 2, 0.3);
+  color: #fff;
+  min-height: 200px;
+}
+
+/* Calls the vision header forward to assign it a colour */
+.our-vision {
+  color: #fff;
+}
+
+.our-team h3 {
+  font-weight: 700;
+  color: #222;
+
+}
+
+.our-team h4 {
+  font-weight: 700;
+  color: #222;
+}
+
+/* Implements flexbox for nav bar */
+nav form {
+  display: flex;
+}
+
+.ending-content {
+  padding: 10px 15px;
+  color: #222;
+}
+
+.our-team .card div {
+  padding: 10px 15px;
+}
+
+.card {
+  background-color: #ffe6ac;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Styles the message area for mobile and adds min-width of 300px so that it fully takes up the allocated screen space */
+.message-area label,
+.message-area input,
+.message-area textarea {
+  display: block;
+  min-width: 300px;
+  max-height: 300px;
+  margin: 10px;
+  padding: 6px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+/* Adds background colour of black to button and makes the "Send" text white */
+.message-area button {
+  border: 0;
+  background-color: #222;
+  color: #c78c06;
+  padding: 10px 15px;
+}
+
+/* Begins styling table */
+.contact table {
+  width: 100%;
+  color: #222;
+}
+
+
+/* Styles the borders and adds padding to the contact table to make it prim and proper */
+.contact table,
+td,
+th {
+  border: 1px solid;
+  padding: 10px 15px
+}
+
+.contact th {
+  background-color: #ffe6ac;
+
+}
+
+.card div {
+  padding: 10px 10px;
+}
+
+.card button {
+  display: block;
+}
+
+/* Makes card img 100% to fully take up space */
+.card img {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card h4 {
+  margin: 0 auto;
+}
+
+/* Makes all the buttons black and the arrow white, and centered */
+.card button {
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+/* Add map with a fixed height and a margin to create space between it */
+.map {
+  width: 100%;
+  height: 450px; 
+  margin-top: 20px; 
+  overflow: hidden;
+}
+
+
+
+/* Begins styling for desktop */
+@media screen and (min-width:760px) {
+
+  nav,
+  .navigation form {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 70px;
   }
-  
+
+  .logo {
+    display: inline-block;
+  }
+
+  .welcome {
+    padding: 10px;
+  }
+
+
+  .about-us img,
+  nav form button,
+  nav form input,
+  nav ul li a {
+    display: inline-block;
+    align-content: stretch;
+    justify-content: stretch;
+  }
+
+
+  /* stretches the contents of the nav bar with flex grow 1 so it uses 100% of the space, all spaced evenly */
+  nav ul {
+    display: flex;
+    align-content: stretch;
+    flex-grow: 1;
+    justify-content: space-evenly;
+  }
+
+  nav ul li {
+    display: inline-flex;
+  }
+
+  /* Makes the about-us section a grid with 2 columns, each column  being 1 fragment in width */
   .about-us {
-    background-color: #ffe6ac;
-    padding: 10px 10px;
-    color: #222;
+    padding: 10px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  header {
-    background-color: #ffe6ac;
-  }
-  
-  /* Sizes the about-us image to 100% width to fill all the space */
+
   .about-us img {
     width: 100%;
   }
-  
-  /* Adds padding to the text in about-us*/
-  .about-us div{
-    padding: 10px 15px;
-    display: inline-block;
+
+  .about-us div {
+    width: 100%;
   }
 
-  .about-us div h2 {
-    font-size: 30px;
-    margin: 10px 0;
-  }
-
-  .welcome button {
-    padding: 10px 15px;
-    display: inline-block;
-  }
-  
-  .services {
-    padding: 10px 20px;
-  }
-  
-  .services h2 {
-    font-size: 30px;
-  }
-  /* Adds the text for vision button and centers it */
-  .vision button {
-    margin: 10px 0;
-    text-align: center;
-    border: 0;
-    display: block;
-    background-color: #222;
-    color: #fff;
-    padding: 10px 15px;
-  }
-
-  /* Adds the image for "vision," sets it as background, and adds padding to make it fit snugly */
-  .vision {
-    background-image: url(../images/vision.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
+  .welcome {
     padding: 20px 70px;
-    background-color: #ffe6ac;
   }
-  
-  /* Adds the transparent boxes like in the welcome banner */
-  .vision div {
-    padding: 10px;
-    background-color: rgba(2, 2, 2, 0.3);
-    color: #fff;
-    min-height: 200px;
+
+  /* Makes the services-list a grid with 6 columns, each column being 1 fragmentwide, with a 5 px gap between them  */
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
   }
-  
-  .our-team h3 {
-    font-weight: 700;
-    color: #222;
+
+  /* Spans services-items 2 colums in the grid*/
+  .services-item-span-2-col {
+    grid-column: span 2;
   }
-  .our-team h4 {
-    font-weight: 700;
-    color: #222;
+
+  /* Spans services-items 3 colums in the grid (to make the first two item bigger)*/
+  .services-item-span-3-col {
+    grid-column: span 3;
   }
-  
-  /* Implements flexbox for nav bar */
-  nav form {
-    display: flex;
+
+  /* Makes the people cards a grid with 2 columns, each column 1 fragment wide */
+  .our-team .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .ending-content
-  {
-    padding: 10px 15px;
-    color: #222;
+
+  /* Makes the Bob profile image as the last element in grid*/
+  .our-team .bob img {
+    order: 1;
   }
-  
-  .our-team .card  div
-  {
-    padding: 10px 15px;
+
+  /* Make the contact section a grid with 2 columns, each column 1 fragment wide */
+  .ending-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
-  
-  /* Styles the message area for mobile and adds min-width of 300px so that it fully takes up the allocated screen space */
+
+  /* Makes the hours of operation as the last element in grid in desktop mode */
+  .hours-of-op {
+    grid-column: span 2;
+    order: 1;
+  }
+
   .card {
-    background-color: #ffe6ac;
-    margin-bottom: 10px;
-    color: #222;
-  }
-  .message-area label,
-  .message-area input,
-  .message-area textarea {
-    display: block;
-    width: 100%;
-    min-width: 300px;
-    min-height: 100px;
-  }
-  
-  /* Adds background colour of black to button and makes the "Send" text white */
-  .message-area button {
-    border: 0;
-    background-color: #222;
-    color: #fff;
-    padding: 10px 15px;
-  }
-  
-  /* Begins styling table */
-  .contact table {
-    width: 100%;
-    color: #222;
-  }
-  
-  
-  /* Styles the borders and adds padding to the contact table to make it prim and proper */
-  .contact table,
-  td,
-  th {
-    border: 1px solid;
-    padding: 10px 15px
+    display:block;
   }
 
-  .contact th{
-    background-color: #ffe6ac;
-    
-  }
-
-  .card div {
-    padding: 10px 10px;
-  }
-  
-  .card button{
-    display: block;
-  }
-  /* Makes card img 100% to fully take up space */
-  .card img {
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .card h3 {
-    margin: 10px 0;
-  }
-  
-  /* Makes all the buttons black and the arrow white, and centered */
   .card button {
-    padding: 20px 20px;
-    text-align: center;
-    text-decoration: none;
-    border: 0;
-    background-color: #222;
-    color: #fff;
-  }
-  .map {
-      width:600px;
-      height:450px;
-      border:0;
+    width: 100%;
+    margin: 10px auto;
   }
 
-  /* Begins styling for desktop */
-  @media screen and (min-width:760px) {
-      
-      nav,
-      .navigation form {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 70px;
-      }
-      .logo {
-        display: inline-block;
-      }
-      
-      .welcome {
-        padding: 10px;
-      }
 
-
-      .about-us img,
-      nav form button,
-      nav  form input,
-      nav  ul  li  a {
-        display: inline-block;
-        align-content: stretch;
-        justify-content: stretch;
-      }
-      
-      
-      /* stretches the contents of the nav bar with flex grow 1 so it uses 100% of the space, all spaced evenly */
-      nav ul {
-        display: flex;
-        align-content: stretch;
-        flex-grow: 1;
-        justify-content: space-evenly;
-    }
-
-      nav ul li {
-        display: inline-flex;
-      }
-
-      /* Makes the about-us section a grid with 2 columns, each column  being 1 fragment in width */
-      .about-us {
-        padding: 10px 50px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      }
-      
-      .about-us img {
-          width: 100%;
-      }
-      
-      .about-us div {
-        width: 100%;
-      }
-      
-      .welcome {
-        padding: 20px 70px;
-      }
-      
-      /* Makes the services-list a grid with 6 columns, each column being 1 fragmentwide, with a 5 px gap between them  */
-      .services-list {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-gap: 5px;
-      }
-      
-      /* Spans services-items 2 colums in the grid*/
-      .services-item-span-2-col   {
-        grid-column: span 2;
-      }
-     /* Spans services-items 3 colums in the grid (to make the first two item bigger)*/
-      .services-item-span-3-col {
-        grid-column: span 3;
-      }
-      
-      /* Makes the people cards a grid with 2 columns, each column 1 fragment wide */
-      .our-team .card
-      {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      }
-      
-      /* Makes the Bob profile image as the last element in grid*/
-      .our-team .bob img {
-        order: 1;
-      }
-
-      /* Make the contact section a grid with 2 columns, each column 1 fragment wide */
-      .ending-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-      }
-      
-        /* Makes the hours of operation as the last element in grid in desktop mode */
-      .hours-of-op {
-        grid-column: span 2;
-        order: 1;
-      }
-      
-      .card {
-        display: inline-block;
-      }
-      
-      .card button {
-        width: 100%;
-        margin: 10px auto;
-      }
-      
-    
-  }
+}
